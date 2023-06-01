@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stalesheet" href="form.css">
+    <title>My First Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<form method="post" action="#" onsubmit="return validateForm()">
+		
+        <label for="user id">user id:</label>
+        <input type="user id" id="user id" name="user id" placeholder="length of 5 to 12 characters"  pattern="[A-Za-z0-9]{5,12}" required>
+        <br><br>
+
+        <label for="password">Password:</label>
+		<input type="password" id="password" name="password" placeholder="length of 7 to 12 characters" pattern="[A-Za-z0-9]{5,12}"  required>
+		<br><br>
+
+        <label for="name">Name:</label>
+		<input type="text" id="name" name="name" placeholder="Letters Only"    pattern="[A-Za-z]+" required>
+        <br><br>
+
+        <label for="address">Address:</label>
+		<input type="text" id="Adress" name="Adress"placeholder="optional" option>
+		<br><br>
+		
+		<label for="country">Country:</label>
+		<select id="country" name="country"placeholder="required" required>
+			<option value="">Select a country</option>
+			<option value="South Africa">South Africa</option>   
+		<br><br>
+           
+		<label for="zip">ZIP code:</label>
+			<input type="text" id="zip" name="zip" pattern="[0-9]{5}" required>
+		  <br><br>
+		
+		  <label for="email">Email:</label>
+		  <input type="email" id="email" name="email"placeholder="Valid email address only" required>
+		<br><br>
+
+
+		<label for="Sex">Sex:</label>
+		<label for="male">Male</label>
+        <input type="radio" id="male" name="gender" value="male" required>
+         <label for="female">Female</label>
+         <input type="radio" id="female" name="gender" value="female" required>
+         <br><br>
+        
+		 <label for="Language">Language:</label>
+		 <label for="english">English</label>
+		 <input type="checkbox" id="english" name="language" value="english">
+		 <label for="Non English">Non-English</label>
+		 <input type="checkbox" id="Non English" name="language" value="Non-English">
+	   <br><br>
+
+	   <label for="about">About:</label>
+	   <textarea id="about" name="about"placeholder="optional"></textarea>
+	 
+	 
+        <br><br>
+		<input type="submit" value="Submit">
+        <br><br>
+		
+        
+
+	</form>
+
+</form>
+
+ 
+    
+</body>
+</html>
